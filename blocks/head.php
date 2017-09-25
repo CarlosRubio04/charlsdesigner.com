@@ -3,7 +3,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
       <meta name="description" content="">
-      <meta name="author" content="Carlos Rubio at Brand Media Digital Group">
+      <meta name="author" content="Carlos Rubio">
       <title>Carlos Rubio | Frontend Developer</title>
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
