@@ -1,4 +1,4 @@
-<?php require_once('includes/get_data.php'); ?>
+<?php //require_once('includes/get_data.php'); ?>
 <!DOCTYPE html>
 <html lang="es">
 <?php require_once('blocks/head.php'); ?>
