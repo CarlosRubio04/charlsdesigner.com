@@ -1,3 +1,77 @@
+// prefijos
+$prefixes: "webkit", "moz", "ms", "o", "none";
+@mixin prefix($property, $arguments) {
+ @each $prefix in $prefixes {
+   @if $prefix == "none" {
+     #{$property}: $arguments;
+     } @else {
+       -#{$prefix}-#{$property}: $arguments;
+     } 
+   }
+ }
+
+//Colors
+
+$red: #DD105E;
+$blue: #46466E;
+$darkGray: #8787A3;
+$gray: #BDBDD7;
+
+
+$break-small: 768px;
+
+
+body {
+	font-family: 'Titillium Web', sans-serif;
+}
 .main {
 	min-height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	background-color: $blue;
+}
+h1 {
+	color: $gray;
+	font-weight: 700;
+	small {
+		font-weight: 300;
+		font-size: 20px;
+		color: $darkGray;
+		@media screen and (max-width: $break-small) {
+			display: block;
+		}
+		i {
+			color: $red;
+		}
+	}
+}
+h4 {
+	color: $darkGray;
+	font-weight: 300;
+	font-size: 16px;
+}
+img {
+	max-width: 90%;
+	margin: 0 auto;
+	display: block;
+	@media screen and (max-width: $break-small) {
+		max-width: 150%;
+		width: 150%;
+		@include prefix(transform, translateX(-40px));
+	}
+}
+.social {
+	list-style: none;
+	padding-left: 0 !important;
+	li {
+		display: inline-block;
+		margin-right: 10px;
+		a {
+			color: $gray;
+			@include prefix(transition, all .5s ease-in-out);
+			&:hover {
+				color: lighten($blue, 20%);
+			}
+		}
+	}
 }
